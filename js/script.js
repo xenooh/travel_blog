@@ -28,5 +28,16 @@ $(document).ready(function(){
        //$vdo[0].play();
        $('.vdo-popup-back').fadeIn(400);
     });
+//클로즈 버튼 눌러서 닫기
+    $('.close').click(function(){
+      $('.vdo-popup-back').fadeOut(500);
+    });
+    //버튼 닫기 
+    $('.vdo-popup-back').click(function(e){
+      if($(e.target).is('#vdo-back')){
+         $(this).fadeOut(500);
+      }
+
+    });
   
   });
